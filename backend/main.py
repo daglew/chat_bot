@@ -2,12 +2,12 @@ from openai import OpenAI, RateLimitError
 
 
 class ChatBotBackend:
-    def __init__(self):
+    def __init__(self, api_key):
+        self.api_key = api_key
         self.client = self.initialize_client()
 
-    @staticmethod
-    def initialize_client():
-        return OpenAI(api_key="")
+    def initialize_client(self):
+        return OpenAI(api_key=self.api_key)
 
     def custom_chat(self, prompt: str):
         try:
