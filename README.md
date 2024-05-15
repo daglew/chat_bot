@@ -17,7 +17,7 @@ cd .venv
 ## Installation virtual environment (venv)
 
 ```
-1. CreatE a virtual environment called venv in the current path
+1. Create a virtual environment called venv in the current path
 Create venv 
 python3 -m pip install virtualenv
 python3 -m venv ./venv
@@ -31,24 +31,6 @@ pip install -r chat_bot/.venv
 
 4. set up interpreter
 PyCharm -> File -> Settings -> Python interpreter ->zębatka -> Add -> Existing environment -> ...  -> Interpreter -> <path>/venv/Scripts/python f.e path
-``` 
-## Create a new branch
-
-```
-1. Open Pycharm
-2. Go to terminal
-3. Use command "git status"
-4. Check on what branch are you ( there should be information that you are on develop branch)
-5. Create a new branch use command "git checkout -b chatbot_first_commit"
-6. Use command "git status"
-7. Check on what branch are you
-8. Use command "git checkout develop"
-9. Check on what branch are you
-10. Use command "git checkout chatbot_first_commit"
-11. Check on what branch are you
-12. Go to develop branch
-13. Delete the branch "git branch -d <chatbot_first_commit>
-
 ```
 
 ```bash
@@ -69,4 +51,5 @@ source virtual_environment/Scripts/activate
 #install external packages from the location where we call requirements.txt (must be in the same path)
 echo "Execute command: pip install -r requirements.txt, installing all aditional packages"
 pip install -r requirements.txt 
+python3 open main.py
 ```
